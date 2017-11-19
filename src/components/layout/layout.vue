@@ -1,13 +1,13 @@
 <template>
  	<div class="sidemenu">
         <el-menu  class="el-menu-vertical-demo" :default-active="$route.path" router="router">
-        <el-menu-item index="/">
-            <i class="el-icon-setting"></i>
+        <el-menu-item index="/"> 
+            <i class="iconfont icon-pifu"></i>
             <span slot="title">换肤</span>
         </el-menu-item>
         <el-submenu index="2">
             <template slot="title">
-                <i class="el-icon-menu"></i>
+                <i class="iconfont icon-gongneng"></i>
                 <span>功能一</span>
             </template>
             <el-menu-item-group>
@@ -17,7 +17,7 @@
         </el-submenu>
         <el-submenu index="3">
             <template slot="title">
-                <i class="el-icon-menu"></i>
+                <i class="iconfont icon-shezhi"></i>
                 <span>功能二</span>
             </template>
             <el-menu-item-group>
@@ -25,7 +25,6 @@
             </el-menu-item-group>
         </el-submenu>
         </el-menu>
-         <router-view></router-view>
 	</div> 
 </template>
 
@@ -47,7 +46,7 @@ export default {
        float: left;
        .el-menu-vertical-demo {
             width: 200px;
-            min-height: 750px;
+            min-height: 700px;
         }
     }
 </style>

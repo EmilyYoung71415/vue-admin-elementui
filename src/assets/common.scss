@@ -1,0 +1,31 @@
+// @import  './mixin.scss';
+// @for $i from 1 to 6 {
+//     .custome-#{nth($colors, $i)} {
+//       color: nth($colors, $i)
+//     }
+//   }
+/*
+*.custome-#0000ff {
+*       color: #0000ff;
+*   }
+*/
+.custome-0000ff {
+    color: #0000ff;
+}
+
+.custome-8000 {
+color: 8000;
+}
+
+.custome-fa4f52 {
+color: fa4f52;
+}
+
+.custome-20a0ff {
+color: 20a0ff;
+}
+
+.custome-0a597 {
+color: 0a597;
+}
+  

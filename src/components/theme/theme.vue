@@ -7,10 +7,10 @@
       <div class="mulColor">
         <el-radio-group v-model="moreTheme" @change="changeTheme">
           <el-radio label="20a0ff">默认-20a0ff</el-radio>
-          <el-radio label="fa4f52">红色-fa4f52</el-radio>
-          <el-radio label="0000ff">蓝色-0000ff</el-radio>
-          <el-radio label="008000">绿色-008000</el-radio>
-          <el-radio label="00a597">绿色-00a597</el-radio>
+          <el-radio label="fa4f52">橙色-fa4f52</el-radio>
+          <el-radio label="0000ff">紫色-0000ff</el-radio>
+          <el-radio label="008000">草绿-008000</el-radio>
+          <el-radio label="00a597">蓝绿-00a597</el-radio>
         </el-radio-group>
       </div>
     </el-card>
@@ -80,6 +80,10 @@ export default {
 }
 </script>
 <style scoped>
+  .app-container{
+    float: right;
+    width: 80%
+  }
   .box-card{
     width: 400px;
     margin: 20px auto;

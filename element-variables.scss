@@ -14,7 +14,9 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 $--color-white: #fff !default;
 $--color-black: #000 !default;
 
-$--color-primary: red !default;
+$--color-primary: #1b1e24 !default;
+$--color-backgound:#262A33 !default;
+$--color-active-fill:#1caf9a !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -25,10 +27,10 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
 
-$--color-success: #67c23a !default;
-$--color-warning: #eb9e05 !default;
-$--color-danger: #fa5555 !default;
-$--color-info: #878d99 !default;
+$--color-success: #1caf9a !default;
+$--color-warning: #FA8273 !default;
+$--color-danger: #E04B4A !default;
+$--color-info: #777 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -40,7 +42,7 @@ $--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
 $--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
 $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
 
-$--color-text-primary: #2d2f33 !default;
+$--color-text-primary: #8b91a0 !default;
 $--color-text-regular: #5a5e66 !default;
 $--color-text-secondary: #878d99 !default;
 $--color-text-placeholder: #b4bccc !default;
@@ -52,7 +54,7 @@ $--link-hover-color: $--color-primary !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #f5f7fa !default;
+$--background-color-base: #011638 !default;
 
 /* Border
 -------------------------- */
@@ -593,11 +595,12 @@ $--steps-border-color: $--disabled-border-base !default;
 $--steps-border-radius: 4px !default;
 $--steps-padding: 20px !default;
 
-/* Menu
+/* MenuSlide
 --------------------------*/
 $--menu-item-color: $--color-text-primary !default;
-$--menu-item-fill: $--color-white !default;
-$--menu-item-hover-fill: $--color-primary-light-9 !default;
+//$--menu-item-fill: $--color-white !default;
+$--menu-item-fill: $--color-primary !default;
+$--menu-item-hover-fill: $--color-backgound !default;
 
 /* Rate
 --------------------------*/

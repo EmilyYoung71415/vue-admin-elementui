@@ -16,7 +16,7 @@ export default {
       }
   },
   mounted(){
-      let curcolor  = localStorage.getItem("themeValue");
+      let curcolor  = this.$store.state.themecolor;
       this.classH2 = 'custome-' + curcolor;
   },
   components: {

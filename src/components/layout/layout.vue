@@ -1,6 +1,5 @@
 <template>
  	<div class="sidemenu">
-         <!-- active-text-color="#1caf9a" -->
         <el-menu  class="el-menu-vertical-demo" :default-active="$route.path" router="router" >
         <el-menu-item index="/"> 
             <i class="iconfont icon-pifu"></i>

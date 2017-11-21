@@ -5,7 +5,7 @@
         <span style="line-height: 36px;">偏好设置</span>
       </div>
       <div class="mulColor">
-        <el-radio-group v-model="moreTheme" @change="changeTheme">
+        <el-radio-group v-model="themecolor" >
           <el-radio label="20a0ff">默认-20a0ff</el-radio>
           <el-radio label="fa4f52">橙色-fa4f52</el-radio>
           <el-radio label="0000ff">紫色-0000ff</el-radio>
@@ -45,10 +45,10 @@
 </template>
 
 <script>
+import { toggleClass } from '@/utils/index'
 export default {
   data() {
     return {
-      moreTheme: "20a0ff",
       tags: [
         { name: '标签一', type: '' },
         { name: '标签二', type: 'gray' },
@@ -60,22 +60,24 @@ export default {
     }
   },
   mounted(){
-    let themeClassName = "";
-    let localTheme = localStorage.getItem("themeValue");
-    themeClassName = localTheme ? localTheme : "20a0ff";
-    this.changeClass(document.body, "custom-" + themeClassName);
-    this.moreTheme = themeClassName;
+    toggleClass(document.body, "custom-" + this.themecolor);
   },
-  methods:{
-      changeClass(element, className) {
-        if (!element || !className) return;
-        element.className = className;
+  computed:{
+    themecolor:{
+      get(){
+        return this.$store.state.themecolor;
       },
-      changeTheme(themeValue) {
-        this.changeClass(document.body, "custom-" + themeValue);
-        this.moreTheme = themeValue;
-        localStorage.setItem("themeValue", themeValue);
+      set(val){
+        this.$store.commit('setThemeColor',val);
       }
+    }
+  },
+  watch:{
+    themecolor:{
+      handler(){
+        toggleClass(document.body, "custom-" + this.themecolor);
+      }
+    }
   }
 }
 </script>

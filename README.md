@@ -1,21 +1,23 @@
-# element-themedemo
+# vue-theme-demo
+基于elemetui的换肤
 
-> A Vue.js project
+# 运行：
 
-## Build Setup
-
-``` bash
-# install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
+# 说明：
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+# 安装elementui
+npm i element-ui -S
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 安装sass
+npm i sass-loader node-sass -D
+
+
+# 技术实现参考博客：
+
+[ Vue的elementUI实现自定义主题](http://blog.csdn.net/wangcuiling_123/article/details/78513245)
+
+[基于Element的动态换肤](https://segmentfault.com/a/1190000009762198#articleHeader2)
